@@ -4,8 +4,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>JoyAvatar</title>
-    <meta name="description" content="JoyAvatar: Unlocking Highly Expressive Avatars via Harmonized Text-Audio Conditioning">
+    <title>JoyStreamer</title>
+    <meta name="description" content="JoyStreamer: Unlocking Highly Expressive Avatars via Harmonized Text-Audio Conditioning">
     <meta name="keywords" content="Audio–Visual Synchronization, Text Alignment, Video Avatar Generation">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
@@ -84,8 +84,8 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
         <div class="content">
             <div style="text-align: center;">
             <!-- <img src="vis/JoyAI_logo_trim.png" alt="JoyAI Logo" style="height: 80px; width: 200px; margin-bottom: 1px;" /> -->
-            <!-- <h1 style="font-size: 5rem; color: #e0e0e0; text-shadow: 0 0 8px rgba(224, 224, 224, 0.3);"><strong>JoyAvatar</strong></h1> -->
-            <h2 style="font-size: 3.0rem; font-weight:700; color: #e0e0e0; text-shadow: 0 0 8px rgba(224, 224, 224, 0.3);">JoyAvatar: Unlocking Highly Expressive Avatars via Harmonized Text-Audio Conditioning</h2>
+            <!-- <h1 style="font-size: 5rem; color: #e0e0e0; text-shadow: 0 0 8px rgba(224, 224, 224, 0.3);"><strong></strong></h1> -->
+            <h2 style="font-size: 3.0rem; font-weight:700; color: #e0e0e0; text-shadow: 0 0 8px rgba(224, 224, 224, 0.3);">: Unlocking Highly Expressive Avatars via Harmonized Text-Audio Conditioning</h2>
             <div style="margin-top: 30px;"></div>
 
 
@@ -123,7 +123,7 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
 <div style="max-width: 1200px; margin: 40px auto; padding: 0 20px; text-align: left;">
     <h3 style="color: #fff; font-size: 20px; margin-bottom: 12px;">Abstract</h3>
     <p style="color: #ddd; line-height: 1.6; font-size: 15px;">
-        Existing video avatar models have demonstrated impressive capabilities in scenarios such as talking, public speaking, and singing. However, the majority of these methods exhibit limited alignment with respect to text instructions, particularly when the prompts involve complex elements including large full-body movement, dynamic camera trajectory, background transitions, or human-object interactions. To break out this limitation, we present JoyAvatar, a framework capable of generating long duration avatar videos, featuring two key technical innovations. Firstly, we introduce a twin-teacher enhanced training algorithm that enables the model to transfer inherent text-controllability from the foundation model while simultaneously learning audio–visual synchronization. Secondly, during training, we dynamically modulate the strength of multi-modal conditions (e.g., audio and text) based on the distinct denoising timestep, aiming to mitigate conflicts between the heterogeneous conditioning signals. These two key designs serve to substantially expand the avatar model's capacity to generate natural, temporally coherent full-body motions and dynamic camera movements as well as preserve the basic avatar capabilities, such as accurate lip-sync and identity consistency. GSB evaluation results demonstrate that our JoyAvatar model outperforms the state-of-the-art models such as Omnihuman-1.5 and KlingAvatar 2.0. Moreover, our approach enables complex applications including multi-person dialogues and non-human subjects role-playing.    </p>
+        Existing video avatar models have demonstrated impressive capabilities in scenarios such as talking, public speaking, and singing. However, the majority of these methods exhibit limited alignment with respect to text instructions, particularly when the prompts involve complex elements including large full-body movement, dynamic camera trajectory, background transitions, or human-object interactions. To break out this limitation, we present , a framework capable of generating long duration avatar videos, featuring two key technical innovations. Firstly, we introduce a twin-teacher enhanced training algorithm that enables the model to transfer inherent text-controllability from the foundation model while simultaneously learning audio–visual synchronization. Secondly, during training, we dynamically modulate the strength of multi-modal conditions (e.g., audio and text) based on the distinct denoising timestep, aiming to mitigate conflicts between the heterogeneous conditioning signals. These two key designs serve to substantially expand the avatar model's capacity to generate natural, temporally coherent full-body motions and dynamic camera movements as well as preserve the basic avatar capabilities, such as accurate lip-sync and identity consistency. GSB evaluation results demonstrate that our  model outperforms the state-of-the-art models such as Omnihuman-1.5 and KlingAvatar 2.0. Moreover, our approach enables complex applications including multi-person dialogues and non-human subjects role-playing.    </p>
 </div>
 
 <!-- 横屏框架图（重点优化宽图显示） -->
@@ -131,10 +131,10 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
     <figure style="display: inline-block; border: 1px solid #333; border-radius: 8px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.6); background: #000;">
         <!-- 注意：max-width 设为 95% 或 100%，但限制最大宽度防止过大 -->
         <img src="vis/framework.png"
-             alt="JoyAvatar dual-system architecture (landscape layout)"
+             alt=" dual-system architecture (landscape layout)"
              style="width: 1000px; max-width: 1200px; height: 400px; display: block; min-height: 3px;">
         <figcaption style="font-size: 14px; color: #aaa; background-color: #111; padding: 10px; margin: 0;">
-            Figure 1: Overview of our JoyAvatar pretraining pipeline.
+            Figure 1: Overview of our  pretraining pipeline.
         </figcaption>
     </figure>
 </div>
@@ -142,7 +142,7 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
     <figure style="display: inline-block; border: 1px solid #333; border-radius: 8px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.6); background: #000;">
         <!-- 注意：max-width 设为 95% 或 100%，但限制最大宽度防止过大 -->
         <img src="vis/tdmd.png"
-             alt="JoyAvatar dual-system architecture (landscape layout)"
+             alt=" dual-system architecture (landscape layout)"
              style="width: 1000px; max-width: 1200px; height: 400px; display: block; min-height: 3px;">
         <figcaption style="font-size: 14px; color: #aaa; background-color: #111; padding: 10px; margin: 0;">
             Figure 2: Pipeline of Twin-Teacher Enhanced DMD Post-Training.
@@ -150,10 +150,10 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
     </figure>
 </div>
 
-    <section id="Introducing JoyAvatar" style="margin-top: 100px;">
+    <section id="Introducing " style="margin-top: 100px;">
         <div class="title">Dynamic Camera Trajectory</div>
         <div class="description">
-            JoyAvatar can handle cinematographic camera motion, encompassing rotations, zooms, and dynamic following of human subject.
+             can handle cinematographic camera motion, encompassing rotations, zooms, and dynamic following of human subject.
             <div style="margin-top: 5px;"></div>
         </div>
 
@@ -206,7 +206,7 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
     <section id="Complex Full-body Motion" style="margin-top: 150px;">
         <div class="title">Complex Full-body Motion</div>
         <div class="description">
-            JoyAvatar is capable of synthesizing a range of complex human motions, including but not limited to walking, running, dancing, and object manipulation.
+             is capable of synthesizing a range of complex human motions, including but not limited to walking, running, dancing, and object manipulation.
             <div style="margin-top: 5px;"></div>
         </div>
 
@@ -286,7 +286,7 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
     <section id="Human-Object Interactions (HOI)" style="margin-top: 150px;">
         <div class="title">Human-Object Interactions (HOI)</div>
         <div class="description">
-            JoyAvatar can generate scenes involving complex human-object interactions and inter-object interactions.
+            JoyStreamer can generate scenes involving complex human-object interactions and inter-object interactions.
             <div style="margin-top: 5px;"></div>
         </div>
 
@@ -337,7 +337,7 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
     <section id="Non-Human Subjects" style="margin-top: 150px;">
         <div class="title">Diverse Input</div>
         <div class="description">
-            Despite being trained solely on real human data, JoyAvatar demonstrates generalization by successfully animating a variety of non-human subjects, including cartoons, dolls, and other stylized avatars.
+            Despite being trained solely on real human data, JoyStreamer demonstrates generalization by successfully animating a variety of non-human subjects, including cartoons, dolls, and other stylized avatars.
             <div style="margin-top: 5px;"></div>
         </div>
 
@@ -412,7 +412,7 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
     <section id="Multi-Talk Demonstration" style="margin-top: 150px;">
         <div class="title">Multi-Talk Demonstration</div>
         <div class="description">
-            JoyAvatar is capable of modeling dialogues involving multiple characters, ensuring that their facial expressions and hand motions are dynamically aligned with the context of conversation.
+            JoyStreamer is capable of modeling dialogues involving multiple characters, ensuring that their facial expressions and hand motions are dynamically aligned with the context of conversation.
             <div style="margin-top: 5px;"></div>
         </div>
 
@@ -447,7 +447,7 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
     <section id="Long-Duration Video Generation" style="margin-top: 150px;">
         <div class="title">Long-Duration Video Generation</div>
         <div class="description">
-            JoyAvatar can efficiently support minute-level avatar video generation.
+            JoyStreamer can efficiently support minute-level avatar video generation.
             <div style="margin-top: 5px;"></div>
         </div>
 
@@ -478,7 +478,7 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
         </div>
          <pre style="text-align: left;margin-left: 10%; margin-top: -30px;width: 50%;"><code>
 @misc{wang2026joyavatarunlockinghighlyexpressive,
-    title={JoyAvatar: Unlocking Highly Expressive Avatars via Harmonized Text-Audio Conditioning}, 
+    title={JoyStreamer: Unlocking Highly Expressive Avatars via Harmonized Text-Audio Conditioning}, 
     author={Ruikui Wang and Jinheng Feng and Lang Tian and Huaishao Luo and Chaochao Li and Liangbo Zhou and Huan Zhang and Youzheng Wu and Xiaodong He},
     year={2026},
     eprint={2602.00702},
@@ -498,7 +498,7 @@ a{color:#999 !important;text-decoration:none !important}a:hover{color:#999 !impo
         margin-top: -100px;
     ">
         <img src="vis/QR-code.jpg" 
-             alt="QR Code for JoyAvatar model"
+             alt="QR Code for JoyStreamer model"
              style="width: 100%; height: auto; border: 1px solid #444; border-radius: 2px;">
         <div style="font-size: 18px; margin-top: 3px; color: #ccc;">Scan to enjoy by WeChat!</div>
     </div>
